@@ -1,5 +1,7 @@
 pipeline {
-    agent device-farm
+    agent {
+        label 'your-label'
+    }
     stages {
         stage('Call API') {
             steps {
